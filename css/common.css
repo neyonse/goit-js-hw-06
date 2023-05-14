@@ -38,7 +38,7 @@ button {
   transition: scale 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.gallery-item>img {
+.gallery-item > img {
   display: block;
   max-width: 100%;
   max-height: auto;

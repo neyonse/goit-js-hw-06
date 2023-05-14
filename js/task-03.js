@@ -15,13 +15,16 @@ const images = [
 
 const galleryEl = document.querySelector('.gallery');
 
-const createImagesHtml = data => data.map(({ url: imageUrl, alt: imageAlt }) => 
-    `<li class='gallery-item'><img src='${imageUrl}' alt='${imageAlt}'></li>`);
+const createImagesHtml = data =>
+  data.map(
+    ({ url: imageUrl, alt: imageAlt }) =>
+      `<li class='gallery-item'><img src='${imageUrl}' alt='${imageAlt}'></li>`
+  );
 
 const imagesHtml = createImagesHtml(images).join('');
 console.log(imagesHtml);
 
-galleryEl.insertAdjacentHTML("beforeend", imagesHtml);
+galleryEl.insertAdjacentHTML('beforeend', imagesHtml);
 
 // ----------------------------------------------------------------------------------------------------------------------
 

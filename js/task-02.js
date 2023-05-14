@@ -7,13 +7,14 @@ const ingredients = [
   'Condiments',
 ];
 
-const makeIngredientsMarkup = list => list.map(el => {
-  const listItem = document.createElement('li');
-  listItem.textContent = el;
-  listItem.classList.add('item');
+const makeIngredientsMarkup = list =>
+  list.map(el => {
+    const listItem = document.createElement('li');
+    listItem.textContent = el;
+    listItem.classList.add('item');
 
-  return listItem;
-});
+    return listItem;
+  });
 
 const ingredientsMarkup = makeIngredientsMarkup(ingredients);
 

@@ -1,19 +1,18 @@
 const inputFieldEl = document.querySelector('#validation-input');
 console.log(inputFieldEl);
 
-inputFieldEl.addEventListener('blur', (event) => {
-    const inputFieldValueLength = event.currentTarget.value.trim().length;
-    const inputFieldValueToPass = Number(inputFieldEl.dataset.length);
+inputFieldEl.addEventListener('blur', event => {
+  const inputFieldValueLength = event.currentTarget.value.trim().length;
+  const inputFieldValueToPass = Number(inputFieldEl.dataset.length);
 
-    if (inputFieldValueLength == inputFieldValueToPass) {
-        inputFieldEl.classList.remove('invalid');
-        inputFieldEl.classList.add('valid');
-    }
-    else {
-        inputFieldEl.classList.remove('valid');
-        inputFieldEl.classList.add('invalid');
-    }
-})
+  if (inputFieldValueLength == inputFieldValueToPass) {
+    inputFieldEl.classList.remove('invalid');
+    inputFieldEl.classList.add('valid');
+  } else {
+    inputFieldEl.classList.remove('valid');
+    inputFieldEl.classList.add('invalid');
+  }
+});
 
 // ----------------------------------------------------------------------------------------------------------------------
 

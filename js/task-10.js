@@ -5,7 +5,7 @@ function getRandomHexColor() {
 }
 
 const boxesEl = document.querySelector('#boxes');
-const inputEl = document.querySelector('[type="number"]')
+const inputEl = document.querySelector('[type="number"]');
 const createBoxesBtn = document.querySelector('[data-create]');
 const destroyBoxesBtn = document.querySelector('[data-destroy]');
 
@@ -31,17 +31,15 @@ createBoxesBtn.addEventListener('click', () => {
   const boxesNumber = inputEl.value;
   if (boxesNumber !== '') {
     createBoxes(boxesNumber);
-  }
-  else {
+  } else {
     alert('Enter elements number');
     inputEl.focus();
   }
-})
+});
 
 destroyBoxesBtn.addEventListener('click', () => {
   boxesEl.innerHTML = '';
-})
-
+});
 
 // ----------------------------------------------------------------------------------------------------------------------
 

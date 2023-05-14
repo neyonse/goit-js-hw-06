@@ -5,11 +5,12 @@ const nameOutputEl = document.querySelector('#name-output');
 console.log(nameOutputEl);
 
 nameInputFieldEl.addEventListener('input', () => {
-    if (nameInputFieldEl.value !== '') { nameOutputEl.textContent = nameInputFieldEl.value; }
-    else {nameOutputEl.textContent = 'Anonymous' }
-})
-
-
+  if (nameInputFieldEl.value !== '') {
+    nameOutputEl.textContent = nameInputFieldEl.value;
+  } else {
+    nameOutputEl.textContent = 'Anonymous';
+  }
+});
 
 // ----------------------------------------------------------------------------------------------------------------------
 

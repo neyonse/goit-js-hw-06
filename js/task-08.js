@@ -3,30 +3,29 @@ console.log(loginForm);
 
 loginForm.addEventListener('submit', onSubmit);
 
-function onSubmit (event) {
-    event.preventDefault();
+function onSubmit(event) {
+  event.preventDefault();
 
-    const { email, password } = event.currentTarget.elements;
+  const { email, password } = event.currentTarget.elements;
 
-    if (email.value === '' || password.value === '') {
-        alert("Please fill in all the fields!");
-        
-        if (email.value === '') {
-            email.focus();
-        }
-        else {
-            password.focus();
-        }
-        return;
+  if (email.value === '' || password.value === '') {
+    alert('Please fill in all the fields!');
+
+    if (email.value === '') {
+      email.focus();
+    } else {
+      password.focus();
     }
+    return;
+  }
 
-    let loginFormData = {};
-    loginFormData.email = email.value;
-    loginFormData.password = password.value;
+  let loginFormData = {};
+  loginFormData.email = email.value;
+  loginFormData.password = password.value;
 
-    console.log(loginFormData);
+  console.log(loginFormData);
 
-    event.currentTarget.reset();
+  event.currentTarget.reset();
 }
 
 // ----------------------------------------------------------------------------------------------------------------------
