@@ -20,8 +20,6 @@ const ingredientsMarkup = makeIngredientsMarkup(ingredients);
 
 document.querySelector('#ingredients').append(...ingredientsMarkup);
 
-console.log(document.querySelector('#ingredients'));
-
 // ----------------------------------------------------------------------------------------------------------------------
 
 // Напиши скрипт, який для кожного елемента масиву ingredients:

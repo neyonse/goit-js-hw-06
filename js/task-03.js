@@ -22,7 +22,6 @@ const createImagesHtml = data =>
   );
 
 const imagesHtml = createImagesHtml(images).join('');
-console.log(imagesHtml);
 
 galleryEl.insertAdjacentHTML('beforeend', imagesHtml);
 

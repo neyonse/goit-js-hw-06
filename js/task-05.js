@@ -1,8 +1,5 @@
 const nameInputFieldEl = document.querySelector('#name-input');
-console.log(nameInputFieldEl);
-
 const nameOutputEl = document.querySelector('#name-output');
-console.log(nameOutputEl);
 
 nameInputFieldEl.addEventListener('input', () => {
   if (nameInputFieldEl.value !== '') {
