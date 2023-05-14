@@ -39,6 +39,7 @@ createBoxesBtn.addEventListener('click', () => {
 
 destroyBoxesBtn.addEventListener('click', () => {
   boxesEl.innerHTML = '';
+  inputEl.value = '';
 });
 
 // ----------------------------------------------------------------------------------------------------------------------
